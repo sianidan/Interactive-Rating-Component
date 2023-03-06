@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --lt-grey: hsl(217, 12%, 63%);
+  --med-grey: hsl(216, 12%, 54%);
+  --dk-blue: hsl(213, 19%, 18%);
+  --bg: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  background-color: hsla(213, 19%, 18%, 0.6);
+  border-radius: 1.5em;
+  width: 91vw;
+  max-width: 400px;
+  height: 400px;
+  padding: 1.5em;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  color: white;
+  font-size: 1.75em;
+  padding-bottom: 0.5em;
+}
+
+.lt-grey {
+  color: var(--lt-grey);
+}
+
+.circle {
+  background-color: var(--dk-blue);
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.number:hover {
+  background-color: var(--med-grey);
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--orange);
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3em;
+  padding: 1em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.thank-you {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rating-summary {
+  background-color: var(--dk-blue);
+  color: var(--orange);
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  margin: 1.5em 0;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.number.active {
+  background-color: var(--orange);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  padding: 0 1em;
+  font-size: 12px;
+}
+
+a {
+  color: white;
+}
+
+@media screen and (min-width: 422px) {
+  .thank-you {
+    padding: 0.5em;
+  }
+  .circle {
+    font-size: 1.2em;
+  }
+}

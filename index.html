@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="container">
+    <div class="rating-state card">
+      <div class="circle">
+        <img src="./images/icon-star.svg" alt="star icon">
+      </div>
+
+      <div>
+        <h2>How did we do?</h2>
+        <p class="lt-grey">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+        
+      <form target="_self" name="rating">
+        <div class="lt-grey">
+          <div class="circle number">1</div>
+          <div class="circle number">2</div>
+          <div class="circle number">3</div>
+          <div class="circle number">4</div>
+          <div class="circle number">5</div>
+        </div>
+        <button id="btn" type="button">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- Thank you state -->
+    <div class="thank-you card hidden">
+      <img src="./images/illustration-thank-you.svg" alt="thank you">
+
+      <p class="rating-summary"></p>
+
+      <div>
+        <h2>Thank you!</h2>
+        <p class="lt-grey">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution lt-grey">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/sianidan/Interactive-Rating-Component">Siani Dan</a>.
+  </div>
+</body>
+</html>
